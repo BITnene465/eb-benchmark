@@ -1,0 +1,42 @@
+{
+  "plain": {
+    "source": "S45-initial",
+    "F": [
+      75.6366664899727,
+      77.57987714987118
+    ],
+    "eligible": 651,
+    "measured": 646,
+    "payload_sha256": "861be506ceaee6db45f1893fd729d4d448a9741fc6e78ef09fc68e6bc9cf45b9"
+  },
+  "free": {
+    "source": "S72-initial",
+    "F": [
+      51.3478682142631,
+      54.74058062814936
+    ],
+    "eligible": 1308,
+    "measured": 1261,
+    "payload_sha256": "ea3f65a4db270d8fc08de6ce7c43a396a5b503ab3d2883f69487aac933822737"
+  },
+  "shared": {
+    "source": "S58-initial",
+    "F": [
+      61.64384201715961,
+      67.2259092811513
+    ],
+    "eligible": 1054,
+    "measured": 1001,
+    "payload_sha256": "facd7a6084525596c7d638477c6ef2beb095d460774b11eb5d99aad465959cfb"
+  },
+  "crossing": {
+    "source": "S82-initial",
+    "F": [
+      65.66354732118236,
+      66.64393947804513
+    ],
+    "eligible": 557,
+    "measured": 556,
+    "payload_sha256": "045a51b831e896399a84ecec6ddaa4ee57adf81baa097539e956d33d68917d2a"
+  }
+}

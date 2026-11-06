@@ -1,0 +1,14 @@
+{
+  "protocol": "eb-f-single-rc1",
+  "distribution": "portable-2026-11-06",
+  "scope": "Frozen numeric rules and verified observations. Paths flattened, unused research helpers removed.",
+  "implementation": {
+    "evaluate.py": "593801f9636b9a6da51caf84ee301a504f86772344b56afbefed717e924f9348",
+    "data.py": "ffa3fd32037017b73b300fbb3038995ad37856b268801f40c4e01aedfbae254a",
+    "metrics.py": "842f50931e3110b2cd4d896f2b6988537a86990b37be915fa8a158a942b3c762",
+    "geometry.py": "9c140ce8e0b7ceff9b24f19519e640ff1cb34fd6a694a59099ae582fbaa954f2",
+    "render.py": "e040d455ad724776c22b1e0615c2073b71ef2021f2b7397a476b45e89f103a56",
+    "metric.json": "968dc943d533b221038fc581a8507ecaf02957c400901f84ea795afdaa386901",
+    "score.py": "af392ee8a99d18718d33fb50ec61c30132fe79ac3a587ebfed2b1b4f121cad0a"
+  }
+}

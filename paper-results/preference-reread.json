@@ -1,0 +1,1022 @@
+{
+  "inputs": {
+    "single-submission-rc1/baseline-resolution-crosscheck.json": "ff16f5c7aa73cd7dacb23290946fe55819015e39f81b1964e589328a5c3fd112",
+    "heldout30-v1/primary-comparison.json": "0e77a7850cb63f66e1f72e7f34fcb43a89cd2c999be591b5a4ed2b34fa683eb0",
+    "fresh12-v1/primary-comparison.json": "4aeedf50b8c6fcc2aeac50e4f4bf157b1f206375382f238741fb543e1e05f57a",
+    "appearance-consistency-v1/impact-results.json": "5cb75a96ab4941350ccdce204598de478792a1e85a7dc2e2732eeab419a736da",
+    "appearance-consistency-v1/replay-results.json": "4c46fb2a8e0b34a76c84034da77e0d74291b9d3fe661c865e432804a0f9364f8"
+  },
+  "summary": {
+    "development50": {
+      "all_pairs": 50,
+      "visual_coverage": 40,
+      "strict_coverage": {
+        "old": 32,
+        "released": 30,
+        "reread": 31
+      },
+      "comparable": {
+        "old": {
+          "pairs": 25,
+          "hits": {
+            "old": 18,
+            "SSIM": 18,
+            "LPIPS": 17
+          }
+        },
+        "released": {
+          "pairs": 25,
+          "hits": {
+            "released": 18,
+            "SSIM": 18,
+            "LPIPS": 17
+          }
+        },
+        "reread": {
+          "pairs": 25,
+          "hits": {
+            "reread": 18,
+            "SSIM": 18,
+            "LPIPS": 17
+          }
+        },
+        "common": {
+          "pairs": 25,
+          "hits": {
+            "old": 18,
+            "released": 18,
+            "reread": 18,
+            "SSIM": 18,
+            "LPIPS": 17
+          }
+        }
+      }
+    },
+    "holdout30": {
+      "all_pairs": 30,
+      "visual_coverage": 28,
+      "strict_coverage": {
+        "old": 21,
+        "released": 21,
+        "reread": 21
+      },
+      "comparable": {
+        "old": {
+          "pairs": 19,
+          "hits": {
+            "old": 11,
+            "SSIM": 14,
+            "LPIPS": 16
+          }
+        },
+        "released": {
+          "pairs": 19,
+          "hits": {
+            "released": 11,
+            "SSIM": 14,
+            "LPIPS": 16
+          }
+        },
+        "reread": {
+          "pairs": 19,
+          "hits": {
+            "reread": 11,
+            "SSIM": 14,
+            "LPIPS": 16
+          }
+        },
+        "common": {
+          "pairs": 19,
+          "hits": {
+            "old": 11,
+            "released": 11,
+            "reread": 11,
+            "SSIM": 14,
+            "LPIPS": 16
+          }
+        }
+      }
+    },
+    "fresh12": {
+      "all_pairs": 12,
+      "visual_coverage": 8,
+      "strict_coverage": {
+        "old": 9,
+        "released": 8,
+        "reread": 8
+      },
+      "comparable": {
+        "old": {
+          "pairs": 6,
+          "hits": {
+            "old": 3,
+            "SSIM": 3,
+            "LPIPS": 5
+          }
+        },
+        "released": {
+          "pairs": 5,
+          "hits": {
+            "released": 2,
+            "SSIM": 3,
+            "LPIPS": 5
+          }
+        },
+        "reread": {
+          "pairs": 5,
+          "hits": {
+            "reread": 3,
+            "SSIM": 2,
+            "LPIPS": 4
+          }
+        },
+        "common": {
+          "pairs": 4,
+          "hits": {
+            "old": 2,
+            "released": 2,
+            "reread": 2,
+            "SSIM": 2,
+            "LPIPS": 4
+          }
+        }
+      }
+    },
+    "all_descriptive": {
+      "all_pairs": 92,
+      "visual_coverage": 76,
+      "strict_coverage": {
+        "old": 62,
+        "released": 59,
+        "reread": 60
+      },
+      "comparable": {
+        "old": {
+          "pairs": 50,
+          "hits": {
+            "old": 32,
+            "SSIM": 35,
+            "LPIPS": 38
+          }
+        },
+        "released": {
+          "pairs": 49,
+          "hits": {
+            "released": 31,
+            "SSIM": 35,
+            "LPIPS": 38
+          }
+        },
+        "reread": {
+          "pairs": 49,
+          "hits": {
+            "reread": 32,
+            "SSIM": 34,
+            "LPIPS": 37
+          }
+        },
+        "common": {
+          "pairs": 48,
+          "hits": {
+            "old": 31,
+            "released": 31,
+            "reread": 31,
+            "SSIM": 34,
+            "LPIPS": 37
+          }
+        }
+      }
+    }
+  },
+  "rows": {
+    "S01": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S11": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S13": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S16": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S21": {
+      "visual": null,
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S28": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S32": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S35": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S38": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S40": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S41": {
+      "visual": null,
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "initial"
+    },
+    "S42": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S43": {
+      "visual": null,
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S44": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S45": {
+      "visual": "v6",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S46": {
+      "visual": "initial",
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S47": {
+      "visual": "v6",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S48": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S49": {
+      "visual": null,
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S50": {
+      "visual": null,
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S51": {
+      "visual": null,
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S52": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S53": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S54": {
+      "visual": "initial",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S55": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S56": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S57": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S58": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S60": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S61": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S62": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S63": {
+      "visual": "initial",
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S64": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S65": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S66": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S67": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S68": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S69": {
+      "visual": null,
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S70": {
+      "visual": null,
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S71": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S72": {
+      "visual": "initial",
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S73": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S74": {
+      "visual": "initial",
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S76": {
+      "visual": null,
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S77": {
+      "visual": "v6",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S78": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S79": {
+      "visual": null,
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S80": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S81": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S82": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "initial",
+      "LPIPS": "v6",
+      "split": "development50",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S39": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S31": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S27": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S10": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S12": {
+      "visual": "initial",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S03": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S05": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S18": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S15": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S25": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S36": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S07": {
+      "visual": "v6",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S24": {
+      "visual": null,
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S23": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S02": {
+      "visual": "v6",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S08": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S14": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S37": {
+      "visual": "initial",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S33": {
+      "visual": null,
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S04": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S06": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "S09": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S29": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S20": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S30": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S17": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S34": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S19": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "S22": {
+      "visual": "initial",
+      "old": null,
+      "SSIM": "initial",
+      "LPIPS": "initial",
+      "split": "holdout30",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "S26": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "holdout30",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "real_v2__AAAI_2021_16365_fig2_p3": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "initial",
+      "LPIPS": "v6",
+      "split": "fresh12",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "real_v2__AAAI_2024_29948_fig2_p2": {
+      "visual": "initial",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "fresh12",
+      "released": "overlap",
+      "reread": "initial"
+    },
+    "real_v2__prod_010235": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "fresh12",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "real_v2__prod_019099": {
+      "visual": "v6",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "fresh12",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "real_v1__00439": {
+      "visual": null,
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "fresh12",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "real_v2__AAAI_2022_19992_fig3_p4": {
+      "visual": null,
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "fresh12",
+      "released": "initial",
+      "reread": "initial"
+    },
+    "real_v2__prod_005136": {
+      "visual": null,
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "fresh12",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "real_v2__AAAI_2021_16476_fig2_p2": {
+      "visual": "initial",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "fresh12",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "real_v2__NeurIPS_2025_Pe18madbPm_fig4": {
+      "visual": "v6",
+      "old": null,
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "fresh12",
+      "released": "overlap",
+      "reread": "overlap"
+    },
+    "real_v1__00012": {
+      "visual": "v6",
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "fresh12",
+      "released": "initial",
+      "reread": "overlap"
+    },
+    "real_v2__NeurIPS_2025_rHt6tt5RNF_fig3": {
+      "visual": "v6",
+      "old": "v6",
+      "SSIM": "v6",
+      "LPIPS": "v6",
+      "split": "fresh12",
+      "released": "v6",
+      "reread": "v6"
+    },
+    "real_v2__AAAI_2023_30510_fig1_p1": {
+      "visual": null,
+      "old": "initial",
+      "SSIM": "v6",
+      "LPIPS": "initial",
+      "split": "fresh12",
+      "released": "initial",
+      "reread": "initial"
+    }
+  },
+  "protocol": "Closed cohort of 92 GT-assisted pairs. Compare strict F and baseline agreement on identical clear-preference sources. Report every coverage denominator and all three splits. Development uses archived common-resolution cap1536; fresh and holdout use their sealed primary comparisons. Historical GPT preferences, no human accuracy inference."
+}

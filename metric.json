@@ -1,0 +1,60 @@
+{
+  "version": "0.15.1-source-direction-candidate",
+  "branch_weights": {
+    "L": 0.25,
+    "G": 0.25,
+    "A": 0.25,
+    "T": 0.25
+  },
+  "geometry": {
+    "raster_floor_px_at_2048": 0.5,
+    "tolerance_lambdas": [
+      0,
+      0.005,
+      0.01,
+      0.02,
+      0.04
+    ],
+    "boundary_matching": "weighted_transport_v1",
+    "evidence_representation": "rgb_total_variation_contrast_v1",
+    "mass_precision": 256,
+    "contrast_quantiles": [
+      0.01,
+      0.99
+    ],
+    "outline_evidence": "checked_visible_paths",
+    "outline_guide_half_width_px_at_2048": 6
+  },
+  "appearance": {
+    "deltaE76_half_error": 10,
+    "stroke_width_half_ratio": 1.25,
+    "reference_color_mode": "measured_source_pixels"
+  },
+  "layout": {
+    "position_half_error": 0.1,
+    "size_half_ratio": 1.1,
+    "layout_weight": 0.5,
+    "relation_weight": 0.5
+  },
+  "typography": {
+    "algorithm": "soft_ink_shared_alignment_v1",
+    "crop_padding_px": 4,
+    "border_width_px": 2,
+    "foreground_quantile": 0.95,
+    "raster_alignment_offsets_px": [
+      -1.0,
+      -0.75,
+      -0.5,
+      -0.25,
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "ink_blur_sigma_px": 0.5,
+    "foreground_color_half_deltaE": 10.0,
+    "foreground_color_deadzone_deltaE": 3.0,
+    "ink_mass_half_ratio": 1.25
+  }
+}

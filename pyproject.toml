@@ -1,0 +1,16 @@
+[project]
+name = "eb-benchmark"
+version = "0.1.0"
+description = "Research prototype for fine-grained scientific figure evaluation"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy==2.5.4",
+  "scipy==1.18.1",
+  "Pillow==12.1.1",
+  "opencv-python-headless==4.14.0.94",
+  "PyMuPDF==1.28.2",
+]
+
+[tool.uv]
+package = false
+cache-dir = ".runtime/uv-cache"

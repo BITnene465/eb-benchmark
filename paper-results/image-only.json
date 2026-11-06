@@ -1,0 +1,418 @@
+{
+  "scope": "Conditional complete-census refinement of the same 24 original submissions. Frozen RC1 quality and costs unchanged; no optimal-correspondence candidate protocol included. S06 adds 50 independently acquired text facts and unions two declared fragment/grouping interpretations. GPT readers are not human validation.",
+  "historical_panel_sha": "eb9f3ac5927527629f07eed962d0a01a3f53f2a0c6ff93ba68c98a24893d0d56",
+  "program_sha": "b65f946a6974a57c226f02d6da9a09a22590db39596c71daf54ee63c3e28d24d",
+  "sources": {
+    "S06": {
+      "path": "results/image-only-complex-v1/S06/census-closure/current-primary.json",
+      "sha256": "c0d736e1fe5c3fe21c17499117f8d2836cd13e1a4fdd1bbc4416a522f7c6b880"
+    },
+    "S06_text": {
+      "path": "results/image-only-complex-v1/S06/text-readback/rescore.json",
+      "sha256": "96b174eb371bd982bbf8854c7b5a365f6fbcc9ead9e452674eb6008409305d3b"
+    },
+    "S25": {
+      "path": "results/image-only-complex-v1/S25/sol/census-closure/current-primary.bounded-score.json",
+      "sha256": "ae719c32a3234bbd4f03d575e9edb50c79dbfe6038c2d9fd00cb3102ef73c0c0"
+    },
+    "S24": {
+      "path": "results/image-only-complex-v1/evidence-budget-v1/ownership-transfer/result.json",
+      "sha256": "cccb9188d86b1135cb234664809f113e8c0d602f71b8e40575bce1e8642d8628"
+    },
+    "MAMBA": {
+      "path": "results/image-only-transfer-v1/ambiguity/joint-results.json",
+      "sha256": "2b906124ec9975766eb0d81c06ea345c248b47f85f28302c9bf22c91e90aad59"
+    }
+  },
+  "summary": {
+    "pairs": 12,
+    "dual_preference": 10,
+    "F_strict_all": 5,
+    "F_and_reader": 4,
+    "methods": {
+      "F_choice": {
+        "own_scored": 4,
+        "same_on_own": 4,
+        "same_on_common": 4
+      },
+      "native_SSIM": {
+        "own_scored": 10,
+        "same_on_own": 6,
+        "same_on_common": 4
+      },
+      "SSIM_cap1536": {
+        "own_scored": 10,
+        "same_on_own": 5,
+        "same_on_common": 4
+      },
+      "LPIPS_cap1536": {
+        "own_scored": 10,
+        "same_on_own": 7,
+        "same_on_common": 4
+      }
+    }
+  },
+  "positive_lower_bounds": 24,
+  "rows": [
+    {
+      "sample": "S52",
+      "cohort": "pilot3",
+      "F": [
+        [
+          79.70665141825522,
+          79.70665141825522
+        ],
+        [
+          78.31993491682805,
+          78.31993491682805
+        ]
+      ],
+      "F_choice": "sol",
+      "preference": "disagree",
+      "raw_pref": [
+        "tie",
+        "sol"
+      ],
+      "native_SSIM": "sol",
+      "SSIM_cap1536": "sol",
+      "LPIPS_cap1536": "sol",
+      "previous_F": [
+        [
+          79.70665141825522,
+          79.70665141825522
+        ],
+        [
+          78.31993491682805,
+          78.31993491682805
+        ]
+      ]
+    },
+    {
+      "sample": "S47",
+      "cohort": "pilot3",
+      "F": [
+        [
+          70.24156192914316,
+          70.24156192914316
+        ],
+        [
+          73.80948366355206,
+          73.80948366355206
+        ]
+      ],
+      "F_choice": "astra",
+      "preference": "astra",
+      "raw_pref": [
+        "astra",
+        "astra"
+      ],
+      "native_SSIM": "astra",
+      "SSIM_cap1536": "astra",
+      "LPIPS_cap1536": "astra",
+      "previous_F": [
+        [
+          70.24156192914316,
+          70.24156192914316
+        ],
+        [
+          73.80948366355206,
+          73.80948366355206
+        ]
+      ]
+    },
+    {
+      "sample": "S60",
+      "cohort": "pilot3",
+      "F": [
+        [
+          69.6052935485338,
+          69.6052935485338
+        ],
+        [
+          64.02397841439658,
+          67.97134683544921
+        ]
+      ],
+      "F_choice": "sol",
+      "preference": "sol",
+      "raw_pref": [
+        "sol",
+        "sol"
+      ],
+      "native_SSIM": "sol",
+      "SSIM_cap1536": "sol",
+      "LPIPS_cap1536": "sol",
+      "previous_F": [
+        [
+          69.6052935485338,
+          69.6052935485338
+        ],
+        [
+          64.02397841439658,
+          67.97134683544921
+        ]
+      ]
+    },
+    {
+      "sample": "S49",
+      "cohort": "complex6",
+      "F": [
+        [
+          68.05906594043012,
+          69.31447719584138
+        ],
+        [
+          71.81414376749511,
+          73.06955502290637
+        ]
+      ],
+      "F_choice": "astra",
+      "preference": "astra",
+      "native_SSIM": "astra",
+      "SSIM_cap1536": "astra",
+      "LPIPS_cap1536": "astra",
+      "previous_F": [
+        [
+          68.05906594043012,
+          69.31447719584138
+        ],
+        [
+          71.81414376749511,
+          73.06955502290637
+        ]
+      ]
+    },
+    {
+      "sample": "S21",
+      "cohort": "complex6",
+      "F": [
+        [
+          79.65799730453179,
+          79.65799730453179
+        ],
+        [
+          75.07157848988545,
+          76.07157848988547
+        ]
+      ],
+      "F_choice": "sol",
+      "preference": "sol",
+      "native_SSIM": "sol",
+      "SSIM_cap1536": "sol",
+      "LPIPS_cap1536": "sol",
+      "previous_F": [
+        [
+          79.65799730453179,
+          79.65799730453179
+        ],
+        [
+          75.07157848988545,
+          76.07157848988547
+        ]
+      ]
+    },
+    {
+      "sample": "S81",
+      "cohort": "complex6",
+      "F": [
+        [
+          80.32601209254936,
+          80.84549261202987
+        ],
+        [
+          80.25880300569928,
+          80.3886731355694
+        ]
+      ],
+      "F_choice": "overlap",
+      "preference": "sol",
+      "native_SSIM": "astra",
+      "SSIM_cap1536": "astra",
+      "LPIPS_cap1536": "astra",
+      "previous_F": [
+        [
+          80.32601209254936,
+          80.84549261202987
+        ],
+        [
+          80.25880300569928,
+          80.3886731355694
+        ]
+      ]
+    },
+    {
+      "sample": "S25",
+      "cohort": "complex6",
+      "F": [
+        [
+          70.72339316634235,
+          73.93560046661783
+        ],
+        [
+          71.91271441197502,
+          73.71565232771782
+        ]
+      ],
+      "F_choice": "overlap",
+      "preference": "sol",
+      "native_SSIM": "astra",
+      "SSIM_cap1536": "astra",
+      "LPIPS_cap1536": "sol",
+      "previous_F": [
+        [
+          0.0,
+          74.38642729873135
+        ],
+        [
+          71.91271441197502,
+          73.71565232771782
+        ]
+      ]
+    },
+    {
+      "sample": "S24",
+      "cohort": "complex6",
+      "F": [
+        [
+          69.7920245718401,
+          75.36027177121738
+        ],
+        [
+          65.01313788838156,
+          73.95668005247782
+        ]
+      ],
+      "F_choice": "overlap",
+      "preference": "sol",
+      "native_SSIM": "astra",
+      "SSIM_cap1536": "astra",
+      "LPIPS_cap1536": "sol",
+      "previous_F": [
+        [
+          69.7920245718401,
+          75.36027177121738
+        ],
+        [
+          0.0,
+          77.18300145988704
+        ]
+      ]
+    },
+    {
+      "sample": "S06",
+      "cohort": "complex6",
+      "F": [
+        [
+          55.993833677513585,
+          86.30309326151617
+        ],
+        [
+          59.25686808896408,
+          87.50106221313276
+        ]
+      ],
+      "F_choice": "overlap",
+      "preference": "astra",
+      "native_SSIM": "astra",
+      "SSIM_cap1536": "astra",
+      "LPIPS_cap1536": "astra",
+      "previous_F": [
+        [
+          0.0,
+          87.64558582336197
+        ],
+        [
+          0.0,
+          88.18162603034602
+        ]
+      ]
+    },
+    {
+      "sample": "real_v2__AAAI_2021_16365_fig2_p3",
+      "cohort": "new3",
+      "F": [
+        [
+          54.63126751044774,
+          77.19221924257984
+        ],
+        [
+          64.13121127121985,
+          79.03560165939906
+        ]
+      ],
+      "F_choice": "overlap",
+      "preference": "astra",
+      "native_SSIM": "astra",
+      "SSIM_cap1536": "sol",
+      "LPIPS_cap1536": "sol",
+      "previous_F": [
+        [
+          0.0,
+          80.08941416421216
+        ],
+        [
+          0.0,
+          80.04227377839842
+        ]
+      ]
+    },
+    {
+      "sample": "real_v2__AAAI_2023_30510_fig1_p1",
+      "cohort": "new3",
+      "F": [
+        [
+          82.08538049296162,
+          83.75065362562604
+        ],
+        [
+          82.28522046090097,
+          84.07714124259158
+        ]
+      ],
+      "F_choice": "overlap",
+      "preference": "sol",
+      "native_SSIM": "astra",
+      "SSIM_cap1536": "astra",
+      "LPIPS_cap1536": "astra",
+      "previous_F": [
+        [
+          82.08538049296162,
+          83.75065362562604
+        ],
+        [
+          82.28522046090097,
+          84.07714124259158
+        ]
+      ]
+    },
+    {
+      "sample": "real_v2__NeurIPS_2025_rHt6tt5RNF_fig3",
+      "cohort": "new3",
+      "F": [
+        [
+          73.81002391167755,
+          81.6814236732327
+        ],
+        [
+          78.24756985753942,
+          82.32288259882026
+        ]
+      ],
+      "F_choice": "overlap",
+      "preference": "disagree",
+      "native_SSIM": "astra",
+      "SSIM_cap1536": "astra",
+      "LPIPS_cap1536": "astra",
+      "previous_F": [
+        [
+          73.81002391167755,
+          81.6814236732327
+        ],
+        [
+          78.24756985753942,
+          82.32288259882026
+        ]
+      ]
+    }
+  ]
+}
