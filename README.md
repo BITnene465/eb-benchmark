@@ -6,9 +6,11 @@ and the recorded results for 208 reconstructions.
 
 ## Run
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then from the cloned repository:
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 
 ```sh
+git clone https://github.com/BITnene465/eb-benchmark.git
+cd eb-benchmark
 export UV_PYTHON_INSTALL_DIR="$PWD/.runtime/python"
 uv sync --frozen
 uv run python -B score.py examples/crossing/case.json
@@ -114,3 +116,11 @@ separate experiments and are not fabricated by the F command.
 
 See [protocol.md](protocol.md) for the scoring contract and
 [paper-results/README.md](paper-results/README.md) for table provenance.
+
+## Contributing
+
+Fork the repository, make changes on a branch, and open a pull request against
+`main`. Describe the change and its validation. Before submitting code changes, run
+`uv run python -B test_core.py` and `uv run python -B reproduce.py`.
+Keep the flat research-code structure; changes to the frozen scoring rules should
+be discussed explicitly and recorded as a new protocol version.
