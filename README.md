@@ -1,5 +1,7 @@
 # EB-Bench
 
+English | [简体中文](README.zh-CN.md)
+
 Fine-grained evaluation of scientific figures reconstructed as editable PowerPoint slides.
 This repository contains the frozen visual-fidelity scorer, complete example inputs,
 and the recorded results for 208 reconstructions.
